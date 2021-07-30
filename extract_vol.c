@@ -12,6 +12,7 @@ int main(int argc, char *argv[]){
     char argName [strlen(argv[1]) + 9];
     char *finName;
     char cwdbuf[PATH_MAX];
+    chdir(argv[1]);
     strcat(strcpy(argName, argv[1]), " Combined");
     struct dirent *entry;
     struct stat filestat;
